@@ -165,9 +165,9 @@ presets:
     # 默认配置 ── 不命中任何时间段时的行为
     default:
       collect: true                # 始终采集
-      analyze: true                # AI 分析当前榜单
+      analyze: false                # AI 分析当前榜单
       ai_mode: "current"           # AI 分析当前榜单
-      push: true                   # 每次推送当前在榜热点
+      push: false                   # 每次推送当前在榜热点
       report_mode: "current"       # 当前在榜的新闻
       once:
         analyze: false             # 不限制分析次数
@@ -187,6 +187,7 @@ presets:
           push: true               # 窗口内只推送一次
 
     # 日计划 ── 把时间段组装成一天的安排
+        push: true
     day_plans:
       all_day:
         periods: ["evening_summary"]
