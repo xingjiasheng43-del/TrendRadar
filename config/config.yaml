@@ -315,9 +315,9 @@ notification:
       chat_id: ""                     # Telegram Chat ID
 
     email:
-      from: ""                        # 发件人邮箱地址
-      password: ""                    # 发件人邮箱密码或授权码
-      to: ""                          # 收件人邮箱，多个用逗号分隔
+      from: "3439405873@qq.com"                        # 发件人邮箱地址
+      password: "ejsngksiobwpdbci"                    # 发件人邮箱密码或授权码
+      to: "3439405873@qq.com"                          # 收件人邮箱，多个用逗号分隔
       smtp_server: ""                 # SMTP 服务器（可选，留空自动识别）
       smtp_port: ""                   # SMTP 端口（可选，留空自动识别）
 
@@ -347,7 +347,7 @@ storage:
   # - auto: 自动选择（GitHub Actions 且配置了远程存储 → remote，否则 → local）
   # - local: 本地 SQLite + TXT/HTML 文件
   # - remote: 远程云存储（S3 兼容协议，支持 R2/OSS/COS 等）
-  backend: "auto"
+  backend: "local"
 
   # 数据格式选项
   formats:
